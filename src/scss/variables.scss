@@ -1,0 +1,21 @@
+$base-font-size: 16px;
+
+$img-path: "../images";
+
+#root {
+  --primary-color: rgb(255, 0, 0);
+  --primary-color_: rgb(22, 56, 79);
+  --secondary-color: rgb(255, 255, 255);
+  --secondary-color_: rgb(238, 212, 51);
+  --primary-color-light: rgba(255, 0, 0, 0.3);
+  --secondary-color-1: rgba(255, 255, 255, 0.16);
+  --secondary-color-2: rgba(57, 116, 152, 0.2);
+  --secondary-color-3: rgba(0, 0, 0, 0.25);
+  --secondary-color-4: rgba(255, 255, 255, 0.4);
+  --black: rgb(0, 0, 0);
+  --grey-1: rgba(209, 209, 209, 1);
+  --grey-2: rgba(178, 178, 178, 1);
+  --grey-3: rgba(106, 106, 106, 1);
+  --grey-4: rgba(40, 39, 44, 1);
+  --red: rgb(210, 0, 36);
+}
