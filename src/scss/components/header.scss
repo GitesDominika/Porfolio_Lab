@@ -1,5 +1,6 @@
 .header {
   width: 100%;
+  max-width: 118.75rem;
   display: flex;
   justify-content: flex-end;
   margin-top: 2.3125rem;
@@ -7,7 +8,6 @@
   background-color: rgba(0,0,0, .0);
 
   &__inner {
-    max-width: 118.75rem;
     height: 5.9375rem;
     margin-right: 8.875rem;
   }
