@@ -1,54 +1,137 @@
+::-webkit-input-placeholder {
+  color: #3C3C3C26;
+  font-size: 12px
+}
+
+
 .contact__container {
   width: 100%;
-  text-align: center;
 
   .contact__inner {
     width: 100%;
     max-width: 118.75rem;
+    position: relative;
+    margin-top: 7.5rem;
+
     display: flex;
-    flex-direction: row;
-    background-color: #F0F1F1;
-    display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
-
+    padding-right: 8.875rem;
 
     .contact__content {
-      width: 51%;
-      display: flex;
-      flex-direction: column;
+      width: 528px; /*33rem*/
+      margin-top: 4.5rem;
 
       .contact__hdl h2 {
         font-size: 2.25rem;
         font-weight: 500;
+        text-align: center;
       }
+
       .contact__ornament {
         margin-top: 1.625rem;
         margin-bottom: 1.625rem;
+        line-height: 2;
         background: url('../img/Decoration.png') no-repeat center;
-        line-height: 2;
-      }
-      .contact__text p {
-        font-size: 1.875rem;
-        font-weight: 400;
-        margin-inline: 8.5rem;
-        line-height: 2;
-        margin-top: 1rem;
-      }
-      .contact__sign {
-        background: url('../img/Signature.png') no-repeat center;
-        height: 9.3125rem;
-        margin-left: 25rem;
-        margin-top: 2.5rem;
       }
 
+      .contact__ornament p {
+        text-align: center;
+      }
+
+      .contact__form {
+        //height: 327px;
+        padding-top: 1.625rem;
+        text-align: left;
+
+        .line {
+          display: flex;
+          flex-direction: row;
+
+          .input__box {
+            margin-bottom: 8px;
+
+            .input__row {
+              height: 62px;
+              text-align: left;
+            }
+
+            .brake {
+              margin-right: 16px;
+            }
+
+            .input__row input {
+              width: 256px;
+              margin-top: 4px;
+              outline-style: none;
+              border-top: none;
+              border-left: none;
+              border-right: none;
+              border-bottom: 1px solid black;
+              background-color: rgba(0, 0, 0, .0);
+              display: block;
+            }
+
+            .input__row label {
+              font-size: 12px;
+              font-weight: 900;
+            }
+
+          }
+
+          .textarea__box {
+            margin-top: 4px;
+
+          }
+
+          .textarea__box textarea {
+            background-color: rgba(0, 0, 0, .0);
+
+          }
+        }
+
+        .button-sub {
+          margin-top: 24px;
+          border: 1px solid #3C3C3C;
+          cursor: pointer;
+          padding: 13px 50px;
+          font-size: 16px;
+          font-weight: 300;
+          color: #737373;
+          line-height: 1;
+          background-color: transparent;
+        }
+
+        .button-sub:hover {
+          margin-top: 24px;
+          border: 1px solid #FAD648;
+          cursor: pointer;
+          padding: 13px 50px;
+          font-size: 16px;
+          font-weight: 300;
+          color: black;
+          line-height: 1;
+          background-color: transparent;
+        }
+      }
+
+      .footer {
+        width: 100%;
+      }
     }
 
     .contact__img {
-      width: 49%;
-      background: url('../img/People.png') no-repeat left;
-      height: 58.4375rem;
+      width: 100%;
+
+      height: 100vh;
+      overflow: hidden;
+      position: absolute;
+      top: -5rem;
+      left: 0;
+      z-index: -2;
+      background: url('../img/Background_Image.png') no-repeat center;
+      opacity: 0.3;
     }
 
 
