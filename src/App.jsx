@@ -39,10 +39,11 @@ function App() {
                 {/* Include the Header component */}
                 <Contact />
             </section>
-            <section className="social__container">
-            {/* Include the Header component */}
-            <SocialMediaBar />
-            </section>
+            <div className="social__container">
+                {/* Include the Header component */}
+                <SocialMediaBar />
+            </div>
+
         </>
     );
 }
