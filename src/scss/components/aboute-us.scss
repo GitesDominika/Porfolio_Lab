@@ -1,0 +1,55 @@
+.aboute-us__container {
+  width: 100%;
+  text-align: center;
+
+  .aboute-us__inner {
+    width: 100%;
+    max-width: 118.75rem;
+    display: flex;
+    flex-direction: row;
+    background-color: #F0F1F1;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+
+    .aboute-us__content {
+      width: 51%;
+      display: flex;
+      flex-direction: column;
+
+      .aboute-us__hdl h2 {
+        font-size: 2.25rem;
+        font-weight: 500;
+      }
+      .aboute-us__ornament {
+        margin-top: 1.625rem;
+        margin-bottom: 1.625rem;
+        background: url('../img/Decoration.png') no-repeat center;
+        line-height: 2;
+      }
+      .aboute-us__text p {
+        font-size: 1.875rem;
+        font-weight: 400;
+        margin-inline: 8.5rem;
+        line-height: 2;
+        margin-top: 1rem;
+      }
+      .aboute-us__sign {
+        background: url('../img/Signature.png') no-repeat center;
+        height: 9.3125rem;
+        margin-left: 25rem;
+        margin-top: 2.5rem;
+      }
+
+    }
+
+    .aboute-us__img {
+      width: 49%;
+      background: url('../img/People.png') no-repeat left;
+      height: 58.4375rem;
+    }
+
+
+  }
+}

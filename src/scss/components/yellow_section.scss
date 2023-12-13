@@ -1,0 +1,41 @@
+.yellow__main {
+  width: 100%;
+  background-color: #FAD648; /* var(--yellow);*/
+  max-width: 118.75rem;
+  padding-inline: 10.1875rem;
+  margin: 3.5rem auto 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 1.5;
+
+  .col__1 {
+    width: 25rem;
+
+      &--hdl h2{
+        font-size: 5.5rem;
+        font-weight: 300;}
+      &--title p {
+        margin-top: .5rem;
+        text-transform: uppercase;
+        font-weight: bold;}
+      &--pargraf p{
+        margin-top: 1rem;
+        font-family: "Merriweather", 'Open Sans';
+        font-weight: 500;}
+    }
+
+    .col__2{
+      &--hdl{}
+      &--title{}
+      &--pargraf{}
+    }
+
+    .col__3{
+      &--hdl{}
+      &--title{}
+      &--pargraf{}
+    }
+}

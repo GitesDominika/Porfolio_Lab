@@ -1,0 +1,89 @@
+.hero {width: 100%; }
+
+.hero .hero__inner {
+  position: relative;
+}
+
+.hero .hero__inner .hero__bg {
+  width: 885px;
+  height: 963px;
+  overflow: hidden;
+  position: absolute;
+  top: -8rem;
+  left: 0;
+  z-index: -10;
+  background: url('../img/Hero_Image.png') no-repeat right;
+}
+
+.hero .hero__inner .hero__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 42rem;
+  padding: 13.55rem;
+
+  text-align: center;
+}
+
+.hero .hero__inner .hero__row .wrapper__row {
+  display: inline-block;
+  flex-direction: row;
+}
+
+.hero .hero__inner .hero__row .lead {}
+
+.hero .hero__inner .hero__row h3 {
+  color: var(--notblack);
+  font-weight: 400;
+  font-size: 2.25rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.hero .hero__inner .hero__row .ornament {}
+
+.hero .hero__inner .hero__row p {
+  margin-top: 1.625rem;
+  background: url('../img/Decoration.png') no-repeat center;
+  line-height: 2;
+}
+
+.hero .hero__inner .hero__row .gift {
+  margin-right: 1.5rem;
+}
+.hero .hero__inner .hero__row .organize {
+  margin-left: 1.5rem;
+}
+
+.hero .hero__inner .hero__row button {
+  width: 18.75rem;
+  height: 7.5rem;
+  margin-top: 4rem;
+  border: 1px solid #3C3C3C;
+  cursor: pointer;
+  padding: .8125rem 3.1875rem;
+  background-color: rgba(0,0,0, .0);
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: #737373;
+  line-height: 1;
+}
+
+.hero .hero__inner .hero__row button:hover {
+  width: 18.75rem;
+  height: 7.5rem;
+  margin-top: 4rem;
+  border: 1px solid var(--yellow);
+  cursor: pointer;
+  padding: .8125rem 3.1875rem;
+  background-color: rgba(0,0,0, .0);
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: #737373;
+  line-height: 1;
+}
+
+
+

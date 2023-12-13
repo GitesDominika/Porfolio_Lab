@@ -1,0 +1,85 @@
+.header {
+  width: 100%;
+  max-width: 118.75rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2.3125rem;
+  margin-right: 8.875rem;
+  background-color: rgba(0,0,0, .0);
+
+  &__inner {
+    height: 5.9375rem;
+    margin-right: 8.875rem;
+  }
+}
+
+.menu {
+
+  .buttons-box {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--notblack);
+
+    .login {
+    }
+
+    .login,
+    .register  {
+      border: 1px solid white;
+      border-radius: .250rem;
+      cursor: pointer;
+      padding: .625rem 1.12rem;
+      background-color: rgba(0,0,0, .0);
+      color: #737373;
+      font-size: 0.875rem;
+    }
+
+    .login:hover,
+    .register:hover  {
+      border: 1px solid var(--yellow);
+      border-radius: .250rem;
+      cursor: pointer;
+      padding: .625rem 1.12rem;
+      background-color: rgba(0,0,0, .0);
+      color: var(--gray2);
+      font-size: 0.875rem;
+    }
+
+  }
+
+&__row {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 42.6875rem;
+}
+  &__item {
+    border: 1px solid white;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    background-color: rgba(0,0,0, .0);
+    text-decoration: none;
+    font-size: 1.125rem;
+  }
+
+  &__item:hover {
+    border: 1px solid black;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    background-color: rgba(0,0,0, .0);
+    text-decoration: none;
+    font-size: 1.125rem;
+  }
+
+  &__item--active {
+    border: 1px solid black;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    background-color: rgba(0,0,0, .0);
+    text-decoration: none;
+    font-size: 1.125rem;
+  }
+}
+
+

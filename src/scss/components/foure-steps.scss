@@ -1,0 +1,105 @@
+.foursteps__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .foursteps__inner {
+    width: 100%;
+    max-width: 118.75rem;
+
+
+    .foursteps__head h2 {
+      font-size: 2.25rem;
+      font-weight: 500;
+      margin: 3.625rem 0 1rem 0;
+
+    }
+
+    .foursteps__head p {
+      margin-top: 1.625rem;
+      margin-bottom: 1.625rem;
+      background: url('../img/Decoration.png') no-repeat center;
+      line-height: 2;
+    }
+
+    .foursteps__iconsrow {
+      background-color: #F0F1F1;
+      padding-inline: 22rem;
+
+      display: flex;
+      justify-content: space-around;
+      gap: 4rem;
+      align-items: center;
+
+      .foursteps__icons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4.5625rem;
+        margin-bottom: 5rem;
+        width:10.25rem;
+
+        .foursteps__icon{ margin-bottom:.5rem; font-size: 1.125rem; }
+        .foursteps__text{  font-size: 1rem; }
+        .foursteps__line {border-bottom: 1px solid black; width:4.375rem; text-align: center; margin-inline: auto; padding-inline: 0; margin-bottom:.5rem;}
+
+        .icon_img1 {
+          background: url('../img/tshert.png') no-repeat center;
+          height: 5.1875rem;
+        }
+        .icon_img2 {
+          background: url('../img/bag.png') no-repeat center;
+          height: 5.1875rem;
+        }
+        .icon_img3 {
+          background: url('../img/loop.png') no-repeat center;
+          height: 5.1875rem;
+        }
+        .icon_img4 {
+          background: url('../img/refresh.png') no-repeat center;
+          height: 5.1875rem;
+        }
+
+      }
+    }
+
+    .foursteps__buttons {
+      background-color: white;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 2.625rem;
+      margin-bottom: 3.625rem;
+
+
+      .foursteps__button {
+        width: 19.375rem;
+        border: 1px solid #3C3C3C;
+        cursor: pointer;
+        padding: .8125rem 3.1875rem;
+        background-color: rgba(0, 0, 0, .0);
+        font-size: 2.25rem;
+        font-weight: 300;
+        color: #737373;
+        line-height: 1;
+      }
+
+      .foursteps__button:hover {
+        width: 19.375rem;
+        border: 1px solid var(--yellow);
+        cursor: pointer;
+        padding: .8125rem 3.1875rem;
+        background-color: rgba(0, 0, 0, .0);
+        font-size: 2.25rem;
+        font-weight: 300;
+        color: #737373;
+        line-height: 1;
+      }
+    }
+
+  }
+}
+
