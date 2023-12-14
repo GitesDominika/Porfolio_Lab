@@ -6,12 +6,8 @@ import YellowSection from './jsx/components/yellow_section'; // Import the Heade
 import FourSteps from './jsx/components/FoureSteps'; // Import the Header component
 import AbouteUs from './jsx/components/abouteus'; // Import the Header component
 import Contact from './jsx/components/Contakt'; // Import the Header component
-import SocialMediaBar from './jsx/components/social-media-bar'; // Import the Header component
-
-
-
-
-
+import SocialMediaBar from './jsx/components/social-media-bar';
+import TabsPage from "./jsx/components/tabs-page.jsx"; // Import the Header component
 
 
 function App() {
@@ -35,14 +31,19 @@ function App() {
                 {/* Include the Header component */}
                 <AbouteUs />
             </section>
+            <section className="tab__container">
+                {/* Include the Header component */}
+                <TabsPage />
+            </section>
             <section className="contact__container">
                 {/* Include the Header component */}
                 <Contact />
             </section>
-            <section className="social__container">
-            {/* Include the Header component */}
-            <SocialMediaBar />
-            </section>
+            <div className="social__container">
+                {/* Include the Header component */}
+                <SocialMediaBar />
+            </div>
+
         </>
     );
 }

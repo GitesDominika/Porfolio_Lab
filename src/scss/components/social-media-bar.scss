@@ -1,18 +1,47 @@
+
+
 .social__container {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-.social__media {
-  width: 100%;
-  max-width: 118.75rem;
+  .social__media {
+    width: 100%;
+    max-width: 118.75rem;
+    padding-top: 1rem;
 
+    .cc {
+      height: 2rem;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
 
-  .cc {}
+    .cc p {
+    }
 
-  .cc p {}
+    .icons__social {
+      float: right;
+      display: inline-flex;
+      width: 86px;
+      margin-right: 8.87rem;
+      position: relative;
+      top: -32px;
 
-  .icon__media {}
-}
+      .icon__fb p {
+        background: url('../img/Facebook.png') no-repeat center;
+        height: 2rem;
+        width: 1.875rem;
+        line-height: 2;
+      }
+
+      .icon__ins p {
+        background: url('../img/Instagram.png') no-repeat center;
+        height: 2rem;
+        width: 1.875rem;
+        margin-left: 1rem;
+        line-height: 2;
+      }
+    }
+
+  }
 }
