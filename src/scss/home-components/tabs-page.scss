@@ -73,7 +73,7 @@
       max-width: 118.75rem;
 
       color: black;
-      //display: none;
+      display: none;
 
       padding-inline: 0 2rem;
       margin: 4rem auto;
@@ -81,7 +81,7 @@
 
       .tab__title {
 
-        margin :1.625rem 19rem;
+        margin: 1.625rem 19rem;
       }
 
       .tab__title p {
@@ -97,7 +97,37 @@
       }
     }
 
-  }
+    .tab__row {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
+      .tab__pagination {
+        display: inline-block;
+      }
+
+      .tab__pagination a {
+        color: black;
+        //float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+
+      .tab__pagination--active {
+        border: 1px solid black;
+        color: black;
+      }
+
+        .tab__pagination--active:hover {
+          border: 1px solid #FAD648;
+          color: black;
+      }
+    }
+
+  }
+  //#Home {background-color: red;}
+  //#News {background-color: green;}
+  //#Contact {background-color: blue;}
 
 }

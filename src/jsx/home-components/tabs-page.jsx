@@ -36,10 +36,10 @@ function TabsPage() {
                 </div>
 
                 <div className="tab__buttons">
-                    <button className="tablink tablink--active" onClick={() => openPage('Home', this, 'red')} id="defaultOpen">
+                    <button className="tablink tablink--activepwd" onClick={() => openPage('Home', this, 'red')} id="defaultOpen">
                         Fundacjom
                     </button>
-                    <button className="tablink" onClick={() => openPage('News', this, 'green')}>
+                    <button className="tablink"  onClick={() => openPage('News', this, 'green')}>
                         Organizacjom pozarządowym
                     </button>
                     <button className="tablink" onClick={() => openPage('Contact', this, 'blue')}>
@@ -70,17 +70,17 @@ function TabsPage() {
                     <div className="tab__title"><p>W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z&nbsp;którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</p></div>
 
                     <div className="tab__box">
-                        <h3>Orgdnizdcja "Lorem Ipsum" 1</h3>
+                        <h3>Orgdnizdcja &ldquo;Lorem Ipsum&rdquo; 1</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                     </div>
 
                     <div className="tab__box">
-                        <h3>Orgdnizdcja "Lorem Ipsum" 2</h3>
+                        <h3>Orgdnizdcja &ldquo;Lorem Ipsum&rdquo; 2</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, eos?</p>
                     </div>
 
                     <div className="tab__box">
-                        <h3>Orgdnizdcja "Lorem Ipsum" 3</h3>
+                        <h3>Orgdnizdcja &ldquo;Lorem Ipsum&rdquo; 3</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                 </div>
@@ -88,20 +88,30 @@ function TabsPage() {
                     <div className="tab__title"><p>W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z&nbsp;którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</p></div>
 
                     <div className="tab__box">
-                        <h3>Zbiórka "Lorem Ipsum" 1</h3>
+                        <h3>Zbiórka &ldquo;Lorem Ipsum&rdquo; 1</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda eius laborum perspiciatis!</p>
                     </div>
 
                     <div className="tab__box">
-                        <h3>Zbiórka "Lorem Ipsum" 2</h3>
+                        <h3>Zbiórka &ldquo;Lorem Ipsum&rdquo; 2</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
 
                     <div className="tab__box">
-                        <h3>Zbiórka "Lorem Ipsum" 3</h3>
+                        <h3>Zbiórka &ldquo;Lorem Ipsum&rdquo; 3</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, iure.</p>
                     </div>
                 </div>
+                <div className="tab__row">
+                <div className="tab__pagination">
+                    {/*<a  href="#">&laquo;</a>*/}
+                    <a className="tab__pagination--active" onClick={() => openPage('Home', this, 'red')}>1</a>
+                    <a  onClick={() => openPage('News', this,'green')}>2</a>
+                    <a  onClick={() => openPage('Contact', this, 'blue')}>3</a>
+                    {/*<a href="#">&raquo;</a>*/}
+                </div>
+                </div>
+
             </div>
         </>
     )
