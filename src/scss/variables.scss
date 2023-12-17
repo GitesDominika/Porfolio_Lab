@@ -3,16 +3,16 @@ $base-font-size: 16px;
 $img-path: "../images";
 
 #root {
-  --white: rgba(255, 255, 255, 1);
-  --white-trans: rgba(255, 255, 255, 0);
-  --gray1: rgba(240, 241, 241,);
-  --gray2: rgba(112, 112, 112,);
-  --gray3: rgba(115, 115, 115,);
-  --brown-light: rgba( 94, 83, 34);
-  --brown-dark: rgba( 60, 60, 60);
-  --brown-trans: rgba( 60, 60, 60, .26);
-  --notblack: rgba(26, 24, 24,);
-  --black: rgba(0, 0, 0,);
+  --white: rgba(255, 255, 255, 1);  /* #FFFFFF */
+  --white-trans: rgba(255, 255, 255, 0);  /* transparent */
+  --gray1: rgba(240, 241, 241);  /* #F0F1F1 */
+  --gray2: rgba(112, 112, 112);  /* #707070 */
+  --gray3: rgba(115, 115, 115);   /*# 737373 */
+  --brown-light: rgba( 94, 83, 34); /* #5e5322 */
+  --brown-dark: rgba( 60, 60, 60); /* #3c3c3c */
+  --notblack: rgba(26, 24, 24); /* #1a1818 */
+  --black: rgba(0, 0, 0, 0); /* #000000 */
 
   --yellow: rgba(250,214,72);
+
 }

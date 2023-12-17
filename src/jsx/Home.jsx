@@ -7,7 +7,6 @@ import FourSteps from './home-components/FoureSteps'; // Import the Header compo
 import AbouteUs from './home-components/abouteus'; // Import the Header component
 import Contact from './home-components/Contakt'; // Import the Header component
 import SocialMediaBar from './home-components/social-media-bar';
-import TabsPage from './home-components/tabs-page'; // Import the Header component
 import TabTwo from './home-components/tabtwo'; // Import the Header component
 
 
