@@ -1,4 +1,5 @@
 @import "./variables";
+@import "settings/_fonts";
 
 * {
   box-sizing: border-box;
@@ -7,6 +8,6 @@
 }
 
 html, body {
-  font-size: 16px;  //$base-font-size;
+  font-size: $base-font-size;  //$base-font-size; /16px
   font-family: 'Open Sans', 'sans-serif';
 }
