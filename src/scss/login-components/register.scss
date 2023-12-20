@@ -45,6 +45,7 @@
       background-color: var(--gray1);
       width: rem(385px); //(385px, $base-font-size);
       height: rem(266px);
+      padding-bottom: rem(16px);
       margin-bottom: rem(32px);
       display: flex;
       justify-content: center;
@@ -80,6 +81,7 @@
       display: flex;
       justify-content: space-around;
 
+
       &__sginin-btn,
       &__login-btn {
         border: 1px solid white;
@@ -88,8 +90,6 @@
         background-color: rgba(0,0,0, .0);
         color: #737373;
         font-size: rem(14px);
-        text-decoration: none;
-
       }
       &__sginin-btn:hover,
       &__login-btn:hover {
@@ -100,8 +100,6 @@
         background-color: rgba(0,0,0, .0);
         color: var(--gray2);
         font-size: rem(14px);
-        text-decoration: none;
-
       }
 
       &__sginin-btn--active,
@@ -113,7 +111,6 @@
         text-decoration: none;
         color: black;
         font-size: rem(14px);
-
       }
     }
   }

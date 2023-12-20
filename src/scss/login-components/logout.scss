@@ -1,0 +1,80 @@
+@import "../settings/_fonts";
+
+.logout-container {
+  width: 100%;
+  height: 75vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .logout-inner {
+    width: 100%;
+    max-width: rem(1900px);   /*118.75rem;*/
+
+    .logout-text__text {
+      width: 100%;
+      max-width: rem(1900px);
+      margin-inline: 0 auto;
+      text-align: center;
+
+      .logout-text__hdl {
+      }
+
+      .logout-text__hdl h2 {
+        font-weight: 500;
+        font-size: rem(32px);
+      }
+
+      .logout-text__ornament {
+        margin-top: rem(24px);
+        line-height: 2;
+        background: url('../img/Decoration.png') no-repeat center;
+      }
+
+      .logout-text__ornament p {
+        text-align: center
+      }
+
+      .logout-buttons {
+        width: 100%;
+        margin-top: rem(40px);
+
+        &__logout-btn {
+          border: 1px solid white;
+          cursor: pointer;
+          padding: rem(10px) rem(16px);
+          background-color: rgba(0,0,0, .0);
+          color: #737373;
+          font-size: rem(14px);
+        }
+
+        &__logout-btn:hover {
+          border: 1px solid var(--yellow);
+          border-radius: rem(4px);;
+          cursor: pointer;
+          padding: rem(10px) rem(16px);
+          background-color: rgba(0,0,0, .0);
+          color: var(--gray2);
+          font-size: rem(14px);
+        }
+
+        &__logout-btn--active {
+          border: 1px solid black;
+          cursor: pointer;
+          padding: rem(10px) rem(16px);
+          background-color: rgba(0,0,0, .0);
+          text-decoration: none;
+          color: black;
+          font-size: rem(14px);
+        }
+      }
+
+    }
+
+
+
+  }
+
+}

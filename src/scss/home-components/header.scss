@@ -22,10 +22,6 @@
     justify-content: flex-end;
     color: var(--notblack);
 
-    .login {
-      text-decoration: none;
-    }
-
     .login,
     .register  {
       border: 1px solid white;
@@ -35,6 +31,7 @@
       background-color: rgba(0,0,0, .0);
       color: #737373;
       font-size: rem(14px);
+      text-decoration: none;
     }
 
     .login:hover,

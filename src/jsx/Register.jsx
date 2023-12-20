@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Header from './home-components/header'; // Import the Header component
 
 
-function Login() {
+function Register() {
     return (
 
         <>
@@ -14,7 +14,7 @@ function Login() {
             <section className="login-container">
                 <div className="login-inner">
                     <div className="login-text__text">
-                        <div className="login-text__hdl"><h2>Zaloguj się</h2></div>
+                        <div className="login-text__hdl"><h2>Załóż konto</h2></div>
                         <div className="login-text__ornament"><p>&nbsp;</p></div>
                     </div>
 
@@ -22,13 +22,15 @@ function Login() {
                         <label htmlFor="email">Email</label>
                         <input type="email" className="email" id="email"/>
                         <label htmlFor="password">Hasło</label>
+                        <input type="password" className="email" id="password"/>
+                        <label htmlFor="password">Powtórz hasło</label>
                         <input type="password" className="" id="password"/>
 
                     </div>
 
                     <div className="login-buttons">
-                        <Link to='/register' className="login-buttons__sginin-btn login-buttons__sginin-btn--active">Załóż konto</Link>
-                        <button type="text" className="login-buttons__login-btn login-buttons__login-btn--active">Zaloguj się</button>
+                        <button type="text" className="login-buttons__sginin-btn login-buttons__sginin-btn--active">Załóż konto</button>
+                        <Link to='/login' className="login-buttons__login-btn login-buttons__login-btn--active">Zaloguj się</Link>
                     </div>
                 </div>
             </section>
@@ -37,5 +39,5 @@ function Login() {
     );
 }
 
-export default Login;
+export default Register;
 

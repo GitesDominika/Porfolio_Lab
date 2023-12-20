@@ -9,8 +9,7 @@ function Header() {
                     <nav className="menu">
                         <div className="buttons-box">
                             <Link to='/login' className="login" type='button'>Zaloguj się</Link>
-
-                            <button className="register">Załóż konto</button>
+                            <Link to='/register' className="register">Załóż konto</Link>
                         </div>
                         <div className="menu__row">
                             <Link to='/' className="menu__item menu__item--active">Start</Link>
