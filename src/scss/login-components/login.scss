@@ -1,0 +1,116 @@
+@import "../settings/_fonts";
+
+.login-container {
+  width: 100%;
+
+  .login-inner {
+    width: 100%;
+    max-width: rem(1900px);   /*118.75rem;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: rem(48px);
+    margin-bottom: rem(48px);
+
+    .login-text__text {
+      width: 100%;
+      max-width: rem(1900px);
+      margin-inline: 0 auto;
+      text-align: center;
+      margin-top: rem(58px);
+      margin-bottom: rem(58px);
+
+      .login-text__hdl {
+      }
+
+      .login-text__hdl h2 {
+        font-weight: 500;
+        font-size: rem(32px);
+      }
+
+      .login-text__ornament {
+        margin-top: rem(26px);
+        //margin-bottom: rem(26px);
+        line-height: 2;
+        background: url('../img/Decoration.png') no-repeat center;
+      }
+
+      .login-text__ornament p {
+        text-align: center
+      }
+    }
+
+    .login-box {
+      background-color: var(--gray1);
+      width: rem(385px); //(385px, $base-font-size);
+      height: rem(236px);
+      margin-bottom: rem(32px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: left;
+
+      input {
+        width: rem(250px);
+        height: rem(32px);
+        outline-style: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid black;
+        background-color: rgba(0, 0, 0, .0);
+      }
+
+      .email {
+        margin-bottom: rem(16px);
+      }
+
+      label {
+        text-align: left;
+        font-size: rem(12px);
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+    }
+
+    .login-buttons {
+      width: rem(352px);
+      display: flex;
+      justify-content: space-around;
+
+
+      &__sginin-btn,
+      &__login-btn {
+        border: 1px solid white;
+        cursor: pointer;
+        padding: rem(10px) rem(16px);
+        background-color: rgba(0,0,0, .0);
+        color: #737373;
+        font-size: rem(14px);
+      }
+      &__sginin-btn:hover,
+      &__login-btn:hover {
+        border: 1px solid var(--yellow);
+        border-radius: rem(4px);;
+        cursor: pointer;
+        padding: rem(10px) rem(16px);
+        background-color: rgba(0,0,0, .0);
+        color: var(--gray2);
+        font-size: rem(14px);
+      }
+
+      &__login-btn--active {
+        border: 1px solid black;
+        cursor: pointer;
+        padding: rem(10px) rem(16px);
+        background-color: rgba(0,0,0, .0);
+        text-decoration: none;
+        color: black;
+        font-size: rem(14px);
+      }
+    }
+  }
+
+}

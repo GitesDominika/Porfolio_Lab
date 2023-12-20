@@ -1,3 +1,5 @@
+@import "../settings/_fonts";
+
 .hero {width: 100%; }
 
 .hero .hero__inner {
@@ -5,11 +7,11 @@
 }
 
 .hero .hero__inner .hero__bg {
-  width: 885px;
-  height: 963px;
+  width: rem(885px);
+  height: rem(963px);
   overflow: hidden;
   position: absolute;
-  top: -7.625rem;
+  top: rem(-122px);
   left: 0;
   z-index: -10;
   background: url('../img/Hero_Image.png') no-repeat right;
@@ -21,8 +23,8 @@
   justify-content: center;
   align-items: center;
 
-  margin-left: 42rem;
-  padding: 13.55rem 8rem;
+  margin-left: rem(672px);
+  padding: rem(216px) rem(128px);
 
   text-align: center;
 }
@@ -37,7 +39,7 @@
 .hero .hero__inner .hero__row h3 {
   color: var(--notblack);
   font-weight: 400;
-  font-size: 2.25rem;
+  font-size: rem(36px);
   text-align: center;
   line-height: 1.5;
 }
@@ -45,41 +47,41 @@
 .hero .hero__inner .hero__row .ornament {}
 
 .hero .hero__inner .hero__row p {
-  margin-top: 1.625rem;
+  margin-top: rem(26px);
   background: url('../img/Decoration.png') no-repeat center;
   line-height: 2;
 }
 
 .hero .hero__inner .hero__row .gift {
-  margin-right: 1.5rem;
+  margin-right: rem(24px);
 }
 .hero .hero__inner .hero__row .organize {
-  margin-left: 1.5rem;
+  margin-left: rem(24px);
 }
 
 .hero .hero__inner .hero__row button {
-  width: 18.75rem;
-  height: 7.5rem;
-  margin-top: 4rem;
+  width: rem(300px);
+  height: rem(120px);
+  margin-top: rem(64px);
   border: 1px solid #3C3C3C;
   cursor: pointer;
-  padding: .8125rem 3.1875rem;
+  padding:rem(13px) rem(51px);
   background-color: rgba(0,0,0, .0);
-  font-size: 2.25rem;
+  font-size: rem(36px);
   font-weight: 300;
   color: #737373;
   line-height: 1;
 }
 
 .hero .hero__inner .hero__row button:hover {
-  width: 18.75rem;
-  height: 7.5rem;
-  margin-top: 4rem;
+  width: rem(300px);
+  height: rem(120px);
+  margin-top: rem(64px);
   border: 1px solid var(--yellow);
   cursor: pointer;
-  padding: .8125rem 3.1875rem;
+  padding:rem(13px) rem(51px);
   background-color: rgba(0,0,0, .0);
-  font-size: 2.25rem;
+  font-size: rem(36px);
   font-weight: 300;
   color: #737373;
   line-height: 1;

@@ -1,6 +1,19 @@
 @use "sass:math";
 @import "../variables";
 
-@function rem($px) {
-@return math.div($px, $base-font-size) * 1rem;
+@function rem($px, $base: $base-font-size) {
+  @return math.div($px, $base) * 1rem;
 }
+
+/*     zapis w kodzie na dwa sposoby
+
+nr1    max-width: rem(960px);
+
+- padajemy tylko wartosc - ilosc pixeli do przeliczenia - czyli w naszej
+funkcji to $px - wtedy funkcja przelicza wartosc pixeli ysaloną wg parametru w varialble
+w kontekscie tego projektu to 16px
+
+
+nr2    max-width: rem(960px, 12px);
+- po przecinku podajemy wartość rozmiaru fontu (to nasze $base: $base-font-size) - tu wpisalismy wybralismy rozmiar
+fontu na 12px */

@@ -8,7 +8,6 @@ function Header() {
                 <div className="header__inner">
                     <nav className="menu">
                         <div className="buttons-box">
-                            {/*<button className="login">Zaloguj się</button>*/}
                             <Link to='/login' className="login" type='button'>Zaloguj się</Link>
 
                             <button className="register">Załóż konto</button>

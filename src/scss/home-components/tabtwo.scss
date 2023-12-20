@@ -1,11 +1,13 @@
+@import "../settings/_fonts";
+
 .tabtwo__container {
   width: 100%;
   min-height: 100vh;
 
   .tab__inner {
     width: 100%;
-    max-width: 118.75rem;
-    padding-top: 3.655rem;
+    max-width: rem(1900px);
+    padding-top: rem(58px);
 
     .tab__text {
       //height: 16rem;
@@ -13,14 +15,14 @@
       margin: 0 auto;
 
       .tab__hdl h2 {
-        font-size: 2.25rem;
+        font-size: rem(36px);
         font-weight: 500;
         text-align: center;
       }
 
       .tab__ornament {
-        margin-top: 1.625rem;
-        margin-bottom: 1.625rem;
+        margin-top: rem(26px);
+        margin-bottom: rem(26px);
         line-height: 2;
         background: url('../img/Decoration.png') no-repeat center;
       }
@@ -33,7 +35,7 @@
 
     .tab {
       overflow: hidden;
-      margin-top: 3rem;
+      margin-top: rem(54px);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -47,12 +49,12 @@
       border: 1px solid transparent;
       //outline: none;
       cursor: pointer;
-      padding: .750rem 1rem;
-      margin-inline: 2rem;
-      font-size: 1.5rem;
+      padding: rem(12px) rem(16px);
+      margin-inline: rem(32px);
+      font-size: rem(24px);
       font-weight: 500;
       line-height: 1;
-      height: 5rem;
+      height: rem(80px);
       width: 12%;
     }
 
@@ -69,38 +71,38 @@
 
     /* Style the tab content (and add height:100% for full page content) */
     .tabcontent {
-      width: 84rem;
-      max-width: 118.75rem;
+      width: rem(1344px);
+      max-width: rem(1900px);
       display: none;
-      padding: 6px 12px;
+      padding: rem(6px) rem(12px);
       color: black;
 
-      padding-inline: 0 2rem;
-      margin: 2rem auto;
+      padding-inline: 0 rem(32px);
+      margin: rem(32px) auto;
       height: 100%;
 
       .tab__title {
 
-        margin: 1.625rem 0;
+        margin: rem(26px) 0;
       }
 
       .tab__title p {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: rem(24px);
       }
 
       .tab__box {
         border-bottom: 1px solid black;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-top: rem(32px);
+        padding-bottom: rem(32px);
 
       }
     }
 
     .tab__row {
       width: 100%;
-      padding-top: 2rem;
-      padding-bottom: 4rem;
+      padding-top: rem(36px);
+      padding-bottom: rem(64px);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -112,9 +114,9 @@
         float: left;
         border: 1px solid black;
         cursor: pointer;
-        padding: .750rem .750rem;
-        margin-inline: .755rem;
-        font-size: 1rem;
+        padding: rem(12px) rem(12px);
+        margin-inline: rem(12px);
+        font-size: rem(16px);
         font-weight: 400;
       }
 

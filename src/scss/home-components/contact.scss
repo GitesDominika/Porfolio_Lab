@@ -1,6 +1,8 @@
+@import "../settings/_fonts";
+
 ::-webkit-input-placeholder {
   color: #3C3C3C26;
-  font-size: 12px
+  font-size: rem(12px);
 }
 
 
@@ -12,29 +14,29 @@
 
   .contact__inner {
     width: 100%;
-    max-width: 118.75rem;
+    max-width:  rem(1900px);
     position: relative;
-    margin-top: 7.5rem;
+    margin-top:  rem(120px);
 
     display: flex;
     justify-content: flex-end;
     align-items: center;
     text-align: center;
-    padding-right: 8.875rem;
+    padding-right:  rem(142px);
 
     .contact__content {
-      width: 528px; /*33rem*/
-      margin-top: 4.5rem;
+      width: rem(528px); /*33rem*/
+      margin-top:  rem(72px);
 
       .contact__hdl h2 {
-        font-size: 2.25rem;
+        font-size:  rem(36px);
         font-weight: 500;
         text-align: center;
       }
 
       .contact__ornament {
-        margin-top: 1.625rem;
-        margin-bottom: 1.625rem;
+        margin-top:  rem(26px);
+        margin-bottom:  rem(26px);
         line-height: 2;
         background: url('../img/Decoration.png') no-repeat center;
       }
@@ -45,7 +47,7 @@
 
       .contact__form {
         //height: 327px;
-        padding-top: 1.625rem;
+        padding-top:  rem(26px);
         text-align: left;
 
         .line {
@@ -53,16 +55,16 @@
           flex-direction: row;
 
           .input__box {
-            margin-bottom: 8px;
+            margin-bottom: rem(8px);
 
             .input__row {
-              height: 62px;
+              height: rem(62px);
               text-align: left;
 
               .control-error {
                 color: red;
-                font-size: .750rem;
-                padding: .250rem 0 0 0;
+                font-size: rem(12px);
+                padding: rem(4px) 0 0 0;
               }
 
               .control-error p {
@@ -71,12 +73,12 @@
             }
 
             .brake {
-              margin-right: 16px;
+              margin-right: rem(16px);
             }
 
             .input__row input {
-              width: 256px;
-              margin-top: 4px;
+              width: rem(256px);
+              margin-top: rem(4px);
               outline-style: none;
               border-top: none;
               border-left: none;
@@ -87,7 +89,7 @@
             }
 
             .input__row label {
-              font-size: 12px;
+              font-size: rem(12px);
               font-weight: 900;
 
             }
@@ -95,7 +97,7 @@
           }
 
           .textarea__box {
-            margin-top: 4px;
+            margin-top: rem(4px);
           }
 
           .textarea__box textarea {
@@ -105,11 +107,11 @@
         }
 
         .button-sub {
-          margin-top: 24px;
+          margin-top: rem(24px);
           border: 1px solid #3C3C3C;
           cursor: pointer;
-          padding: 13px 50px;
-          font-size: 16px;
+          padding: rem(13px) rem(50px);
+          font-size: rem(16px);
           font-weight: 300;
           color: #737373;
           line-height: 1;
@@ -117,11 +119,11 @@
         }
 
         .button-sub:hover {
-          margin-top: 24px;
+          margin-top: rem(24px);
           border: 1px solid #FAD648;
           cursor: pointer;
-          padding: 13px 50px;
-          font-size: 16px;
+          padding: rem(13px) rem(50px);
+          font-size: rem(16px);
           font-weight: 300;
           color: black;
           line-height: 1;
@@ -139,8 +141,8 @@
       height: 109vh;
       //overflow: hidden;
       position: absolute;
-      top: -6.25rem;
-      left: -5rem;
+      top: rem(-100px);
+      left: rem(-80px);
       z-index: -2;
       background: url('../img/Background_Image.png') no-repeat left;
       opacity: 0.2;

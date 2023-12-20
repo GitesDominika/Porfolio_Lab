@@ -2,16 +2,16 @@
 
 .header {
   width: 100%;
-  max-width: 118.75rem;
+  max-width: rem(1900px);
   display: flex;
   justify-content: flex-end;
-  margin-top: 2.3125rem;
-  margin-right: 8.875rem;
+  margin-top: rem(37px);
+  margin-right: rem(142px);
   background-color: rgba(0,0,0, .0);
 
   &__inner {
-    height: 5.9375rem;
-    margin-right: 8.875rem;
+    height: rem(95px);
+    margin-right: rem(142px);
   }
 }
 
@@ -23,64 +23,67 @@
     color: var(--notblack);
 
     .login {
+      text-decoration: none;
     }
 
     .login,
     .register  {
       border: 1px solid white;
-      border-radius: .350rem;
+      border-radius: rem(4px);
       cursor: pointer;
-      padding: .625rem 1.12rem;
+      padding: rem(10px) rem(18px);
       background-color: rgba(0,0,0, .0);
       color: #737373;
-      font-size: 0.875rem;
+      font-size: rem(14px);
     }
 
     .login:hover,
     .register:hover  {
       border: 1px solid var(--yellow);
-      border-radius: .250rem;
+      border-radius: rem(4px);
       cursor: pointer;
-      padding: .625rem 1.12rem;
+      padding: rem(10px) rem(18px);
       background-color: rgba(0,0,0, .0);
       color: var(--gray2);
-      font-size: 0.875rem;
+      font-size: rem(14px);
+
     }
 
   }
 
 &__row {
-  margin-top: 1rem;
-  margin-left: 1rem;
+  margin-top: rem(16px);
+  margin-left: rem(16px);
   display: flex;
   justify-content: space-between;
-  width: 42.6875rem;
+  width: rem(683px);
+
 }
   &__item {
     border: 1px solid white;
     cursor: pointer;
-    padding: .5rem 1rem;
+    padding: rem(8px) rem(16px);
     background-color: rgba(0,0,0, .0);
     text-decoration: none;
-    font-size: 1.125rem;
+    font-size:rem(18px);
   }
 
   &__item:hover {
     border: 1px solid black;
     cursor: pointer;
-    padding: .5rem 1rem;
+    padding: rem(8px) rem(16px);
     background-color: rgba(0,0,0, .0);
     text-decoration: none;
-    font-size: 1.125rem;
+    font-size:rem(18px);
   }
 
   &__item--active {
     border: 1px solid black;
     cursor: pointer;
-    padding: .5rem 1rem;
+    padding: rem(8px) rem(16px);
     background-color: rgba(0,0,0, .0);
     text-decoration: none;
-    font-size: 1.125rem;
+    font-size:rem(18px);
   }
 }
 
