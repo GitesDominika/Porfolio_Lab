@@ -8,8 +8,8 @@ function Header() {
                 <div className="header__inner">
                     <nav className="menu">
                         <div className="buttons-box">
-                            <Link to='/register' className="register">Załóż konto</Link>
-                            <Link to='/login' className="login" type='button'>Zaloguj się</Link>
+                            <Link to='/register' className="register">Oddaj rzeczy</Link>
+                            <Link to='/login' className="login" type='button'>Wyloguj</Link>
                         </div>
                         <div className="menu__row">
                             <Link to='/' className="menu__item menu__item--active">Start</Link>

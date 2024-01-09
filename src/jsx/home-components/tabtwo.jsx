@@ -36,7 +36,7 @@
             <div className="tab__inner">
 
                 <div className="tab__text">
-                    <div className="tab__hdl"><h2>Komu pomagamy?</h2></div>
+                    <div className="tab__hdl" id="whohelp" ><h2>Komu pomagamy?</h2></div>
                     <div className="tab__ornament"><p>&nbsp;</p></div>
                 </div>
 
@@ -78,17 +78,17 @@
                     komu pomagają i czego potrzebują.</p></div>
 
                 <div className="tab__box">
-                    <h3>Orgdnizdcja &ldquo;Lorem Ipsum&rdquo; 1</h3>
+                    <h3>Orgdnizacja &ldquo;Lorem Ipsum&rdquo; 1</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                 </div>
 
                 <div className="tab__box">
-                    <h3>Orgdnizdcja &ldquo;Lorem Ipsum&rdquo; 2</h3>
+                    <h3>Orgdnizacja &ldquo;Lorem Ipsum&rdquo; 2</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, eos?</p>
                 </div>
 
                 <div className="tab__box">
-                    <h3>Orgdnizdcja &ldquo;Lorem Ipsum&rdquo; 3</h3>
+                    <h3>Orgdnizacja &ldquo;Lorem Ipsum&rdquo; 3</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
             </div>

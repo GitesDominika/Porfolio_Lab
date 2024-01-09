@@ -28,7 +28,7 @@ function Login() {
 
                     <div className="login-buttons">
                         <Link to='/register' className="login-buttons__sginin-btn login-buttons__sginin-btn--active">Załóż konto</Link>
-                        <button type="text" className="login-buttons__login-btn login-buttons__login-btn--active">Zaloguj się</button>
+                        <Link to='/acconte' className="login-buttons__login-btn login-buttons__login-btn--active">Zaloguj się</Link>
                     </div>
                 </div>
             </section>

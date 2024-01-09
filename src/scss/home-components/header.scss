@@ -41,7 +41,7 @@
       cursor: pointer;
       padding: rem(10px) rem(18px);
       background-color: rgba(0,0,0, .0);
-      color: var(--gray2);
+      color: black;
       font-size: rem(14px);
 
     }
@@ -63,6 +63,7 @@
     background-color: rgba(0,0,0, .0);
     text-decoration: none;
     font-size:rem(18px);
+    color: black;
   }
 
   &__item:hover {
@@ -72,6 +73,7 @@
     background-color: rgba(0,0,0, .0);
     text-decoration: none;
     font-size:rem(18px);
+    color: black;
   }
 
   &__item--active {
@@ -81,6 +83,7 @@
     background-color: rgba(0,0,0, .0);
     text-decoration: none;
     font-size:rem(18px);
+    color: black;
   }
 }
 

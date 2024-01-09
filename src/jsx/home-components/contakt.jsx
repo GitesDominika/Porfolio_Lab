@@ -3,14 +3,15 @@ import {useState} from "react";
 export default function Login() {
 
     const [enteredValues, setEnteredValues] = useState({
-        name: '', email:'', message:''
+        name: '', email: '', message: ''
     });
 
-    const [didEdit, setDidEdit] = useState( {
-        name: false, email: false, message:false
+    const [didEdit, setDidEdit] = useState({
+        name: false, email: false, message: false
     });
 
     const nameIsInvalid = didEdit.name && !/^[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]*$/.test(enteredValues.name);
+
     const emailIsInvalid = didEdit.email && !/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(enteredValues.email);
     const messageIsInvalid = didEdit.message && enteredValues.message.trim() === '';
 
@@ -38,7 +39,7 @@ export default function Login() {
         }));
     }
 
-    function handleInputBlur (identifier) {
+    function handleInputBlur(identifier) {
         setDidEdit(prevEdit => ({
             ...prevEdit, [identifier]: true,
         }));
@@ -50,7 +51,7 @@ export default function Login() {
             <div className="contact__inner">
                 <div className="contact__content">
 
-                    <div className="contact__hdl"><h2>Skontaktuj się z nami</h2></div>
+                    <div className="contact__hdl" id="kontakt"><h2>Skontaktuj się z nami</h2></div>
                     <div className="contact__ornament"><p>&nbsp;</p></div>
 
                     <form className="contact__form" onSubmit={handleSubmit}>
@@ -62,7 +63,16 @@ export default function Login() {
                                            onBlur={() => handleInputBlur("name")}
                                            onChange={(event) => handleInputChange("name", event)}
                                            value={enteredValues.name}/>
-                                    <div className="control-error">{nameIsInvalid && <p>Wpisz tylko imię</p>}</div>
+                                    <div className="control-error">{nameIsInvalid && (
+                                        <p>
+                                            {enteredValues.name.trim() === ''
+                                                ? "To pole nie może być puste"
+                                                : /^[a-ząćęłńóśźż]*$/.test(enteredValues.name)
+                                                    ? "Wpisz imię z dużej litery"
+                                                    : "Wpisz tylko imię"
+                                            }
+                                        </p>
+                                    )}</div>
                                 </div>
                             </div>
 
@@ -70,23 +80,42 @@ export default function Login() {
                                 <div className="input__row">
                                     <label htmlFor="email">Wpisz swój e-mail</label>
                                     <input type="email" placeholder="wpisz adres e-mail" id="email"
-                                           onBlur={() => handleInputBlur('email') }
+                                           onBlur={() => handleInputBlur('email')}
                                            onChange={(event) => handleInputChange('email', event)}
                                            value={enteredValues.email}/>
-                                    <div className="control-error">{emailIsInvalid && <p>Wpisz poprawnie adres e-mail</p>}</div>
+                                    <div className="control-error">{emailIsInvalid && (
+                                        <p>
+                                            {enteredValues.email.trim() === ''
+                                                ? "To pole nie może być puste"
+                                                : "Popraw błąd"} </p>)}
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div className="textarea__box">
-                            <label htmlFor="message" style={{fontSize: '12px', fontWeight: '900',}}>Wpisz swoją wiadomość</label>
-                            <textarea   onBlur={() => handleInputBlur('message') }
-                                        onChange={(event) => handleInputChange('message', event)}
-                                        value={enteredValues.message}
+                            <label htmlFor="message" style={{fontSize: '12px', fontWeight: '900',}}>Wpisz swoją
+                                wiadomość</label>
+                            <textarea onBlur={() => handleInputBlur('message')}
+                                      onChange={(event) => handleInputChange('message', event)}
+                                      value={enteredValues.message}
 
-                                        rows="5" style={{width: '528px', resize: 'none', marginTop: '8px', backgroundColor: 'transparent', outlineStyle: 'none', borderTop: 'none', borderLeft: 'none', borderRight: 'none'
-                            }}  placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." id="message"></textarea>
-                            <div className="control-error" style={{color: 'red', paddingTop: '.250rem', fontSize: "12px"}}>{messageIsInvalid && <p style={{marginBottom: '4px',}}>Zostaw nam wiadomość</p>}</div>
+                                      rows="5" style={{
+                                width: '528px',
+                                resize: 'none',
+                                marginTop: '8px',
+                                backgroundColor: 'transparent',
+                                outlineStyle: 'none',
+                                borderTop: 'none',
+                                borderLeft: 'none',
+                                borderRight: 'none'
+                            }}
+                                      placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                      id="message"></textarea>
+                            <div className="control-error"
+                                 style={{color: 'red', paddingTop: '.250rem', fontSize: "12px"}}>{messageIsInvalid &&
+                                <p style={{marginBottom: '4px',}}>Zostaw nam wiadomość</p>}</div>
 
                         </div>
 
