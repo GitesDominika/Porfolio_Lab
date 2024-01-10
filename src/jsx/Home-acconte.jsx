@@ -1,7 +1,7 @@
 
 import '../scss/main.scss';
 import Header from './home-acconte-components/header'; // Import the Header component
-import Intro from './home-components/intro'; // Import the Header component
+import Intro2 from './home-acconte-components/intro2.jsx'; // Import the Header component
 import YellowSection from './home-components/yellow_section'; // Import the Header component
 import FourSteps from './home-components/FoureSteps'; // Import the Header component
 import AbouteUs from './home-components/abouteus'; // Import the Header component
@@ -18,7 +18,7 @@ function HomeAcconte() {
                 {/* Include the Header component */}
                 <Header />
                 {/* Include the Intro component */}
-                <Intro />
+                <Intro2 />
             </section>
             <section className="yellow-section-container">
                 {/* Include the Header component */}

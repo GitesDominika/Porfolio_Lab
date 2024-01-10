@@ -10,13 +10,14 @@ import AbouteUs from './jsx/home-components/abouteus.jsx';
 
 import HomeAcconte from './jsx/Home-acconte.jsx';
 import FormUser from "./jsx/Form-User.jsx";
+// import AuthenticationPage from "./jsx/validation-code/authentication.jsx";
 
 
 function App() {
     return (
         <>
             <Routes>
-                <Route path='/login' element={ <Login /> }></Route>
+              <Route path='/login' element={ <Login /> }></Route>     {/*zamiast AuthenticationPage wstaw Login - jesli chcesz wrocic do pierwotnej wersji*/}
             </Routes>
             <Routes>
                 <Route path='/logout' element={ <Logout /> }></Route>

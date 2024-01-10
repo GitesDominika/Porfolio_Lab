@@ -1,0 +1,118 @@
+@import "../settings/_fonts";
+
+.hero3 {width: 100%; }
+
+.hero3 .hero__inner3 {
+  position: relative;
+}
+
+.hero3 .hero__inner3 .hero__bg3 {
+  width: rem(885px);
+  height: rem(963px);
+  overflow: hidden;
+  position: absolute;
+  top: rem(-188px);
+  left: 0;
+  z-index: -10;
+  background: url('../img/Header-Form-Background.png') no-repeat right;
+}
+
+.hero3 .hero__inner3 .hero__row3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: rem(672px);
+  padding: rem(120px) rem(128px);
+
+  text-align: center;
+}
+
+.hero3 .hero__inner3 .hero__row3 .wrapper__row3 {
+  display: inline-block;
+  flex-direction: row;
+}
+
+.hero3 .hero__inner3 .hero__row3 .lead {}
+
+.hero3 .hero__inner3 .hero__row3 h3 {
+  color: var(--notblack);
+  font-weight: 400;
+  font-size: rem(36px);
+  text-align: center;
+  line-height: 1.5;
+}
+/*klasa do intro3*/
+.hero3 .hero__inner3 .hero__row3 h4 {
+  margin-top: rem(16px);
+  color: var(--notblack);
+  font-weight: 300;
+  font-size: rem(36px);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.hero3 .hero__inner3 .hero__row3 .ornament {}
+
+.hero3 .hero__inner3 .hero__row3 p {
+  margin-top: rem(26px);
+  background: url('../img/Decoration.png') no-repeat center;
+  line-height: 2;
+}
+
+.hero3 .hero__inner3 .hero__row3 .gift {
+  text-decoration: none;
+  font-weight: 300;
+  color: #737373;
+}
+.hero3 .hero__inner3 .hero__row3 .organize {
+  text-decoration: none;
+  font-weight: 300;
+  color: #737373;
+}
+
+/*klasa do intro3*/
+.hero3 .hero__inner3 .hero__row3 .wrapper__row3 {
+  //height: rem(120px);
+  //padding-bottom: 200px;
+}
+
+
+.hero3 .hero__inner3 .hero__row3 .squers {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: rem(40px);
+
+}
+
+
+.hero3 .hero__inner3 .hero__row3 .squers .sq {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+  width: rem(120px);
+  height: rem(120px);
+  transform: rotate(45deg);
+  font-size: rem(20px);
+  font-weight: 300;
+  margin: rem(12px);
+}
+
+.hero3 .hero__inner3 .hero__row3 .squers .sq .rot {
+  background-image: none;
+  line-height: 1;
+  transform: rotate(-45deg);
+  text-align: center;
+  margin: rem(6px);
+  padding: 0;
+
+
+}
+
+
+
+
+

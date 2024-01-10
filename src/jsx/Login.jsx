@@ -4,6 +4,7 @@ import Header from './home-components/header'; // Import the Header component
 
 
 function Login() {
+
     return (
 
         <>
@@ -11,7 +12,10 @@ function Login() {
                 {/* Include the Header component */}
                 <Header/>
             </section>
+
             <section className="login-container">
+
+
                 <div className="login-inner">
                     <div className="login-text__text">
                         <div className="login-text__hdl"><h2>Zaloguj się</h2></div>
@@ -20,9 +24,9 @@ function Login() {
 
                     <div className="login-box">
                         <label htmlFor="email">Email</label>
-                        <input type="email" className="email" id="email"/>
+                        <input type="email" className="email" id="email" required/>
                         <label htmlFor="password">Hasło</label>
-                        <input type="password" className="" id="password"/>
+                        <input type="password" className="" id="password" required/>
 
                     </div>
 
@@ -31,6 +35,7 @@ function Login() {
                         <Link to='/acconte' className="login-buttons__login-btn login-buttons__login-btn--active">Zaloguj się</Link>
                     </div>
                 </div>
+
             </section>
         </>
 

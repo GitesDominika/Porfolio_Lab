@@ -33,10 +33,10 @@
         }
     return (
         <>
-            <div className="tab__inner">
+            <div className="tab__inner" id="whohelp">
 
                 <div className="tab__text">
-                    <div className="tab__hdl" id="whohelp" ><h2>Komu pomagamy?</h2></div>
+                    <div className="tab__hdl"  ><h2>Komu pomagamy?</h2></div>
                     <div className="tab__ornament"><p>&nbsp;</p></div>
                 </div>
 

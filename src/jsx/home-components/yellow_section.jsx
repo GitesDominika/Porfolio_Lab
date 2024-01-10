@@ -18,7 +18,7 @@ Number.propTypes = {
 function YellowSection() {
     return (
         <div>
-            <div className="yellow__main">
+            <div className="yellow__main" id="fourstep">
 
                 <div className="col__1">
                     <div className="col__1--hdl"><h2><Number n={10}/></h2></div>

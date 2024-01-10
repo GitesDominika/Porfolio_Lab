@@ -1,0 +1,28 @@
+@import "../settings/_fonts";
+
+.argent__main {
+  width: 100%;
+  background-color: #FAD648; /* var(--yellow);*/
+  max-width:rem(1900px);
+  padding-inline: rem(163px);
+  padding-top: rem(56px) ;
+  padding-bottom: rem(56px);
+
+  //display: flex;
+  //justify-content: space-between;
+  //text-align: left;
+  line-height: 0.7;
+
+  .row {
+    width: rem(1900px);
+
+    .row--hdl h2{
+      font-size: rem(32px);
+      font-weight: 700;}
+
+    .row--paragraf p{
+      margin-top: rem(16px);
+      font-size: rem(18px);
+      font-weight: 500;}
+  }
+}

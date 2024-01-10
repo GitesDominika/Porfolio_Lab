@@ -12,8 +12,8 @@ function Header() {
                             <Link to='/login' className="login" type='button'>Zaloguj się</Link>
                         </div>
                         <div className="menu__row">
-                            <Link to='/' className="menu__item menu__item--active">Start</Link>
-                            <Link to='fourstep' className="menu__item">O co chodzi?</Link>
+                            <a href='/' className="menu__item menu__item--active">Start</a>
+                            <a href="#fourstep" className="menu__item">O co chodzi?</a>
                             <a href="#abouteus" className="menu__item">O nas</a>
                             <a href="#whohelp" className="menu__item">Fundacja i organizacje</a>
                             <a href="#kontakt" className="menu__item">Kontakt</a>

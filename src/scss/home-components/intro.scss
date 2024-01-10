@@ -43,6 +43,15 @@
   text-align: center;
   line-height: 1.5;
 }
+/*klasa do intro3*/
+.hero .hero__inner .hero__row h4 {
+  margin-top: rem(16px);
+  color: var(--notblack);
+  font-weight: 300;
+  font-size: rem(36px);
+  text-align: center;
+  line-height: 1.5;
+}
 
 .hero .hero__inner .hero__row .ornament {}
 
@@ -53,23 +62,26 @@
 }
 
 .hero .hero__inner .hero__row .gift {
-  margin-right: rem(24px);
+  text-decoration: none;
+  font-weight: 300;
+  color: #737373;
 }
 .hero .hero__inner .hero__row .organize {
-  margin-left: rem(24px);
+  text-decoration: none;
+  font-weight: 300;
+  color: #737373;
 }
 
 .hero .hero__inner .hero__row button {
   width: rem(300px);
   height: rem(120px);
   margin-top: rem(64px);
+  margin-inline: rem(24px);
   border: 1px solid #3C3C3C;
   cursor: pointer;
   padding:rem(13px) rem(51px);
   background-color: rgba(0,0,0, .0);
   font-size: rem(36px);
-  font-weight: 300;
-  color: #737373;
   line-height: 1;
 }
 
@@ -82,10 +94,10 @@
   padding:rem(13px) rem(51px);
   background-color: rgba(0,0,0, .0);
   font-size: rem(36px);
-  font-weight: 300;
-  color: #737373;
   line-height: 1;
 }
+
+
 
 
 
