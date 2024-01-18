@@ -1,0 +1,95 @@
+@import "../settings/_fonts";
+
+
+
+  .step__one__main {
+    width: 100%;
+    height: rem(883px);
+
+
+    .step__one__inner {
+      width: 100%;
+      max-width: rem(1900px);
+      padding-inline: rem(163px);
+      padding-top: rem(48px);
+
+      position: relative;
+
+      .step__one__left {
+        .step__one__number {
+          .step__one__number p {}
+        }
+
+        .step__one__headline {
+          margin-top: rem(70px);
+
+          .step__one__headline h2 {}
+        }
+
+        .step__one__forms {
+          margin-top: rem(40px);
+
+          .step__one_checks {margin-top: rem(20px); display: flex;
+
+            input[type="checkbox"] { appearance: none; position: relative; height: rem(40px); width: rem(40px); border: 1px solid black; }
+
+            input[type="checkbox"]:checked {
+              background-color: #FAD648; /* Zmień na preferowany kolor */
+            }
+
+            input[type="checkbox"]::before {
+              content: ''; /* Wymagane, aby pseudo-element był renderowany */
+              display: block;
+              width: 100%;
+              height: 100%;
+              background-color: inherit; /* Dziedziczenie koloru tła od rodzica */
+            }
+
+            input[type="checkbox"]:checked::before {
+              content: ''; /* Wymagane, aby pseudo-element był renderowany */
+              display: block;
+              width: 100%;
+              height: 100%;
+              background-color: inherit; /* Dziedziczenie koloru tła od rodzica */
+            }
+
+            span { padding-left: rem(12px); margin-top: 10px; }
+          }
+
+          .step__one__btn button {
+            width: rem(180px);
+            height: rem(80px);
+            margin-top: rem(115px);
+            border: 1px solid #3C3C3C;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, .0);
+          }
+
+          .step__one__btn button:hover {
+            width: rem(180px);
+            height: rem(80px);
+            margin-top: rem(115px);
+            border: 1px solid #FAD648;;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, .2);
+          }
+
+        }
+      }
+
+
+
+      .step__one__img {
+        width: rem(1900px);
+        height: rem(882px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -20;
+        background: url('../img/Background-Form.png') no-repeat right;
+
+      }
+
+    }
+  }
+
