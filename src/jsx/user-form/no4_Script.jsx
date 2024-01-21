@@ -1,16 +1,18 @@
 import {Component} from 'react';
 // import  {useState} from "react";
 
-import UserDetails from "./UserDetails.jsx";
-import PersonalDetails from "./PersonalDetails.jsx";
-import Confirmation from "./Confirmation.jsx";
-import Success from "./Success.jsx";
+import No4a_StepOne from "./no4a_StepOne.jsx";
+import No4b_StepTwo from "./no4b_StepTwo.jsx";
+import No4c_StepTree from "./no4c_StepTree.jsx";
+import No4d_StepFore from "./no4d_StepFore.jsx";
+import No4e_StepFive from "./no4e_StepFive.jsx";
+import No4f_StepSix from "./no4f_StepSix.jsx";
 
-class Signup extends Component {
+class ScriptToForm extends Component {
 
     state = {
         step: 1,
-        email: '', username: '', password: '', firstName: '', lastName: '', country: '', levelOfEducation: ''
+        checkbox:'', email: '', username: '', password: '', firstName: '', lastName: '', country: '', levelOfEducation: ''
     }
 
     // go back to previous step
@@ -38,7 +40,7 @@ class Signup extends Component {
         switch (step) {
             case 1:
                 return (
-                    <UserDetails
+                    <No4a_StepOne
                         nextStep={this.nextStep}
                         handleChange={this.handleChange}
                         values={values}
@@ -46,7 +48,7 @@ class Signup extends Component {
                 )
             case 2:
                 return (
-                    <PersonalDetails
+                    <No4b_StepTwo
                         prevStep={this.prevStep}
                         nextStep={this.nextStep}
                         handleChange={this.handleChange}
@@ -55,7 +57,7 @@ class Signup extends Component {
                 )
             case 3:
                 return (
-                    <Confirmation
+                    <No4c_StepTree
                         prevStep={this.prevStep}
                         nextStep={this.nextStep}
                         handleChange={this.handleChange}
@@ -64,7 +66,25 @@ class Signup extends Component {
                 )
             case 4:
                 return (
-                    <Success />
+                    <No4d_StepFore
+                        prevStep={this.prevStep}
+                        nextStep={this.nextStep}
+                        handleChange={this.handleChange}
+                        values={values}
+                    />
+                )
+            case 5:
+                return (
+                    <No4e_StepFive
+                        prevStep={this.prevStep}
+                        nextStep={this.nextStep}
+                        handleChange={this.handleChange}
+                        values={values}
+                    />
+                )
+            case 6:
+                return (
+                    <No4f_StepSix />
                 )
           default:
             // do nothing
@@ -72,4 +92,4 @@ class Signup extends Component {
     }
 }
 
-export default Signup;
+export default ScriptToForm;

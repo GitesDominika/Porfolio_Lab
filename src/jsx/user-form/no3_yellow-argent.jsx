@@ -1,4 +1,4 @@
-function YellowArgent() {
+function No3_yellowArgent() {
     return (
         <div>
             <div className="argent__main">
@@ -14,4 +14,4 @@ function YellowArgent() {
     );
 }
 
-export default YellowArgent;
+export default No3_yellowArgent;

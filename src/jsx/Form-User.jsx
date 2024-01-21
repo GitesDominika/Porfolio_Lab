@@ -1,12 +1,12 @@
 
 import '../scss/main.scss';
 import Header from './home-acconte-components/header'; // Import the Header component
-import Intro3 from './user-form/intro3'; // Import the Header component
-import YellowArgent from './user-form/yellow-argent'; // Import the Header component
+import No2_intro3 from './user-form/no2_intro3.jsx'; // Import the Header component
+import No3_yellowArgent from './user-form/no3_yellow-argent.jsx'; // Import the Header component
+import ScriptToForm from "./user-form/no4_Script.jsx";
 import Contact from './home-components/Contakt'; // Import the Header component
 import SocialMediaBar from './home-components/social-media-bar';
-import FormStepOne from "./user-form/form_step_one.jsx";
-import Signup from "../../../multistep-form-react/src/form-components/0_Signup.jsx";
+// import FormStepOne from "./user-form/no3b_form_step_one.jsx";
 
 
 function FormUser() {
@@ -17,18 +17,15 @@ function FormUser() {
                 {/* Include the Header component */}
                 <Header />
                 {/* Include the Intro component */}
-                <Intro3 />
+                <No2_intro3 />
             </section>
             <section className="yellow-section-container">
                 {/* Include the Header component */}
-                <YellowArgent />
+                <No3_yellowArgent />
             </section>
-            <section className="step__one__container">
-                {/* Include the Header component */}
-                <FormStepOne />
-            </section>
-            <div className="App">
-                <Signup/>
+
+            <div className="step__one__container">
+                <ScriptToForm/>
             </div>
             <section className="contact__container">
                 {/* Include the Header component */}

@@ -1,17 +1,22 @@
 @import "../settings/_fonts";
 
 
-
   .step__one__main {
     width: 100%;
     height: rem(883px);
 
 
     .step__one__inner {
-      width: 100%;
+      height: 100%;
+
       max-width: rem(1900px);
       padding-inline: rem(163px);
       padding-top: rem(48px);
+      padding-bottom: rem(64px);
+
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
 
       position: relative;
 
@@ -60,6 +65,7 @@
             width: rem(180px);
             height: rem(80px);
             margin-top: rem(115px);
+            margin-right: rem(50px);
             border: 1px solid #3C3C3C;
             cursor: pointer;
             background-color: rgba(0, 0, 0, .0);

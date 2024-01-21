@@ -1,4 +1,4 @@
-function Intro3() {
+function No2_intro3() {
     return (
         <>
             <div className="hero3">
@@ -25,4 +25,4 @@ function Intro3() {
     );
 }
 
-export default Intro3;
+export default No2_intro3;
